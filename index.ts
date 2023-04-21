@@ -11,7 +11,7 @@ async function openBrowser() {
     const page = await browser.newPage()
     await page.setViewport({ width: 1880, height: 1250 })
     let i = 0
-    while (i < 10) {
+    while (i < 30) {
 
         await page.goto(`https://www.bing.com/`)
         // comando localiza um input e digita o valor nele
@@ -25,7 +25,6 @@ async function openBrowser() {
             delay: 20
         }
         )
-
         i++
     }
 
